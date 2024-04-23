@@ -1,7 +1,7 @@
 /* skills.css */
 
 /* Resetting default margin and padding */
-body, ul {
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -11,21 +11,35 @@ body, ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: White;
 }
-
-/* Styling the list items */
-.skills-list ul {
-    list-style-type: none;
-}
-
 /* Styling the images */
-.logo {
-    width: 50px;
-    height: auto; /* Ensures aspect ratio is maintained */
+.skills-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #0cd5f8; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Additional styles for the list items if needed */
 .skills-list ul li {
-    margin-bottom: 10px;
+    width: calc(20% - 20px); /* Adjust width based on the number of items */
+    text-align: center;
+    background-color: #0cd5f8; /* White background color for list items */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease; /* Smooth animation on hover */
+}
+
+.skills-list ul li:hover {
+    transform: translateY(-5px); /* Move item up slightly on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.logo {
+    width: 100px;
+    height: auto; /* Ensures aspect ratio is maintained */
 }
