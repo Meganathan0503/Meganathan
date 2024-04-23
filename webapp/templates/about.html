@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+    {% include 'include/navbar.html' %}
+    <link rel="stylesheet" href="{% static '/css/about.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <h1>booksky</h1>
+    <div class='container'>
+        <div class="book-container">
+            <h2>python developer</h2>
+            <h3>Meganathan</h3>
+            <p>Meganathanis greatest python developer in the world and the best hackers inthe universe</p>
+            <button>delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <form>
+            <input type="text" placeholder="book title" class="popup-box-input" id="book-title-input">
+            <input type="text" placeholder="book author" class="popup-box-input" id="book-author-input">
+            <textarea placeholder="short description" class="popup-box-input" id="book-description-input"></textarea>
+            <button id="add-book">add</button>
+            <button id="cancel-popup">cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+++</button>
+    <script src="{% static 'js/about.js' %}"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

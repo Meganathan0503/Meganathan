@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Drowsiness Detection System & E-commerce Web Application</title>
+    {% load static %}
+    {% include 'include/navbar.html' %}
+    <link rel="stylesheet" href="{% static 'css/education.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Projects</h1>
+    </header>
+    <main>
+        <section id="drowsiness">
+            <h2><a href="{% url 'drowsiness' %}">Driver Drowsiness Detection System</h2>
+            <p>Our Python-based driver drowsiness detection system employs computer vision to monitor facial features and eye movements in real-time, alerting drivers to signs of drowsiness and fatigue, promoting safer driving practices. It enhances road safety by preventing potential accidents caused by drowsy driving.</p>
+        </section>
+        <section id="ecommerce">
+            <h2><a href="{% url 'ecommerce' %}">E-commerce Web Application</h2>
+            <p>Our project demonstrates an advanced and secure data management system specifically designed for leading brands. Through state-of-the-art encryption and robust access controls, we ensure the utmost protection and confidentiality of sensitive information.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+</body>
+</html>

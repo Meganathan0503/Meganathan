@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% include 'include/navbar.html' %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meganathan Vediraj - Software Engineer</title>
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <script src="{% static 'js/home.js' %}"></script>
+    </head>
+<body>
+    <div class="container">
+        <h1>Meganathan Vediraj - Software Engineer</h1></a>
+        <div class="contact-info">
+            <p>Software Engineer - Python<br>
+            +91-9043303021 | meganathan7456@gmail.com | <a href="https://www.linkedin.com/in/meganathan-v-588589255">LinkedIn</a> | <a href="https://github.com/Meganathan2000">Github</a><br>
+            Chennai, Tamil Nadu</p>
+        </div>
+        <h2><a href="{% url 'skills' %}">Skills</h2></a>
+        <div class="skills">
+            <ul>
+                <li>Languages & Frameworks: Python, HTML, CSS, Django, Flask</li>
+                <li>Databases: MySQL</li>
+                <li>Cloud Technologies: AWS</li>
+                <li>Tools: POSTMAN, SQL plus, Vs Code, PyCharm, Anaconda python</li>
+            </ul>
+        </div>
+        <h2><a href="{% url 'projects' %}">Projects</h2></a>
+        <div class="projects">
+            <ul>
+                <li>Driver Drowsiness Detection System for using in Python</li>
+                <p>Our Python-based driver drowsiness detection system employs computer vision to monitor facial features and eye movements in real-time, alerting drivers to signs of drowsiness and fatigue, promoting safer driving practices. It enhances road safety by preventing potential accidents caused by drowsy driving.</p>
+                <li>E-commerce Web Application for Managing Data Securely</li>
+                <p>Our project demonstrates an advanced and secure data management system specifically designed for leading brands. Through state-of-the-art encryption and robust access controls, we ensure the utmost protection and confidentiality of sensitive information.</p>
+            </ul>
+        </div>
+        <h2><a href="{% url 'experience' %}">Work Experience</h2></a>
+        <div class="experience">
+            <ul>
+                <li>Junior Software Developer at Hearzp IT Company (October 2023 - April 2024)</li>
+                <p>Developed and maintained web applications using the Django framework, ensuring smooth application performance. Worked with databases and ORM tools to manage data efficiently. Learned and applied best practices in software development methodologies, successfully implemented new features to enhance user experience, received positive feedback for proactive problem-solving and teamwork, and contributed to streamlining internal processes through the development of a key module.</p>
+            </ul>
+        </div>
+        <h2><a href="{% url 'certifications' %}">Certification</h2></a>
+        <div class="certification">
+            <ul>
+                <li>Cyber Offensive & Defensive Engineering using Python - Beginner</li>
+                <li>5-day Workshop on Agile & Scrum Methodology in Cloud Computing</li>
+                <li>Certification of Completion for AWS Academy Graduate Foundation</li>
+            </ul>
+        </div>
+        <h2><a href="{% url 'education' %}">Education</h2></a>
+        <div class="education">
+            <ul>
+                <li>SSLC: Government Higher Secondary School - 77%</li>
+                <li>HSC: Government Higher Secondary School - 65.5%</li>
+                <li>B.TECH: Loyola Institute Of Technology - 7.89 CGPA</li>
+            </ul>
+        </div>
+        <div class="declaration">
+            <p><strong>Declaration:</strong> I hereby state that the information above is accurate to the best of my knowledge. Meganathan Vediraj</p>
+        </div>
+    </div>
+</body>
+</html>

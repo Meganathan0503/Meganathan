@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/img/771517.jpg);
+    color: #333;
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+h1 {
+    color: white;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+.skills-list {
+    background-image: url(/static/img/771517.jpg);
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+.skills-list:hover {
+    transform: scale(1.05);
+}
