@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/img/771517.jpg);
+    color: #333;
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container {
+max-width: 800px;
+margin: 50px auto;
+background-color: blue;
+padding: 20px;
+border-radius: 10px;
+color:white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+color: white;
+}
+
+ul {
+list-style-type: disc;
+padding-left: 20px;
+}

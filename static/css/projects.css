@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/img/771517.jpg);
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+/* Customize links */
+    a {
+        color: white;
+        text-decoration: none;
+        
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    section {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: blue;
+        padding: 20px;
+        border-radius: 10px;
+        color:white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }

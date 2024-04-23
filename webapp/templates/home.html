@@ -1,22 +1,29 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        {% include 'include/navbar.html' %}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meganathan Vediraj - Software Engineer</title>
-        <link rel="stylesheet" href="{% static 'css/home.css' %}">
-        <script src="{% static 'js/home.js' %}"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    {% include 'include/navbar.html' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meganathan Vediraj - Software Engineer</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/home.js' %}"></script>
+</head>
 <body>
-    <div class="container">
-        <h1>Meganathan Vediraj - Software Engineer</h1></a>
-        <div class="contact-info">
-            <p>Software Engineer - Python<br>
-            +91-9043303021 | meganathan7456@gmail.com | <a href="https://www.linkedin.com/in/meganathan-v-588589255">LinkedIn</a> | <a href="https://github.com/Meganathan2000">Github</a><br>
-            Chennai, Tamil Nadu</p>
-        </div>
+    <header>
+        <h1>Meganathan Vediraj - Software Engineer</h1>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#certifications">Certification</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="skills">
         <h2><a href="{% url 'skills' %}">Skills</h2></a>
         <div class="skills">
             <ul>
@@ -26,6 +33,9 @@
                 <li>Tools: POSTMAN, SQL plus, Vs Code, PyCharm, Anaconda python</li>
             </ul>
         </div>
+    </section>
+
+    <section id="projects">
         <h2><a href="{% url 'projects' %}">Projects</h2></a>
         <div class="projects">
             <ul>
@@ -35,6 +45,9 @@
                 <p>Our project demonstrates an advanced and secure data management system specifically designed for leading brands. Through state-of-the-art encryption and robust access controls, we ensure the utmost protection and confidentiality of sensitive information.</p>
             </ul>
         </div>
+    </section>
+
+    <section id="experience">
         <h2><a href="{% url 'experience' %}">Work Experience</h2></a>
         <div class="experience">
             <ul>
@@ -42,6 +55,9 @@
                 <p>Developed and maintained web applications using the Django framework, ensuring smooth application performance. Worked with databases and ORM tools to manage data efficiently. Learned and applied best practices in software development methodologies, successfully implemented new features to enhance user experience, received positive feedback for proactive problem-solving and teamwork, and contributed to streamlining internal processes through the development of a key module.</p>
             </ul>
         </div>
+    </section>
+
+    <section id="certifications">
         <h2><a href="{% url 'certifications' %}">Certification</h2></a>
         <div class="certification">
             <ul>
@@ -50,6 +66,9 @@
                 <li>Certification of Completion for AWS Academy Graduate Foundation</li>
             </ul>
         </div>
+    </section>
+
+    <section id="education">
         <h2><a href="{% url 'education' %}">Education</h2></a>
         <div class="education">
             <ul>
@@ -58,9 +77,12 @@
                 <li>B.TECH: Loyola Institute Of Technology - 7.89 CGPA</li>
             </ul>
         </div>
-        <div class="declaration">
+    </section>
+
+    <footer>
+        <div class="container">
             <p><strong>Declaration:</strong> I hereby state that the information above is accurate to the best of my knowledge. Meganathan Vediraj</p>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
