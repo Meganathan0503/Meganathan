@@ -6,7 +6,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url(/static/img/771517.jpg);
+    background-image: url(/static/img/mmm.gif);
     color: #333;
     background-size: cover;
     background-position: center;
@@ -19,7 +19,8 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
-    background-color: #0cd5f8; /* Light gray background color */
+    background-color: #0cd5f8;
+    opacity: 0.7;     /* Light gray background color */
     padding: 20px;
     border-radius: 10px;
 }

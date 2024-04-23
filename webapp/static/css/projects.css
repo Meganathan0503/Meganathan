@@ -3,11 +3,10 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url(/static/img/771517.jpg);
+    background-image: url(/static/img/mmm.gif);
     color: #333;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: cover;
     color: white;
 }
 /* Customize links */
@@ -23,6 +22,7 @@ body {
         max-width: 800px;
         margin: 50px auto;
         background-color: blue;
+        opacity: 0.7; 
         padding: 20px;
         border-radius: 10px;
         color:white;
@@ -32,6 +32,7 @@ body {
         max-width: 800px;
         margin: 50px auto;
         background-color: blue;
+        opacity: 0.7; 
         padding: 20px;
         border-radius: 10px;
         color:white;
@@ -50,6 +51,7 @@ body {
         max-width: 800px;
         margin: 50px auto;
         background-color: blue;
+        opacity: 0.7; 
         padding: 20px;
         border-radius: 10px;
         color:white;
